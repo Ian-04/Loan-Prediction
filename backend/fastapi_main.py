@@ -18,7 +18,7 @@ from feature_eng import feature_engineering, normalization
 models.Base.metadata.create_all(bind=engine)
 
 # Load the model
-model = joblib.load("D:/end-to-end-projects/Loan_app_pred_app/GBM_Reg_Best_Model.pkl")
+model = joblib.load("GBM_Reg_Best_Model.pkl")
 
 # API instance
 app = FastAPI()
